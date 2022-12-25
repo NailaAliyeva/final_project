@@ -1,0 +1,114 @@
+.paginationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.searchInfoDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .searchInfoSection {
+        display: flex;
+        background-color: rgba(148, 175, 148, 0.219);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.616);
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+
+        h3 {
+            margin: 0 10px;
+        }
+    }
+}
+
+.coinContainer {
+    box-sizing: content-box;
+    width: 500px;
+    height: 120px;
+    border: 1px solid rgba(119, 119, 119, 0.37);
+    margin: 12.5px 5px;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.212);
+
+    .imageDiv {
+        width: 120px;
+        height: 120px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .infoDiv {
+        flex-grow: 1;
+        padding-left: 25px;
+
+        .linkAndAddToCartDiv {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                font-weight: bold;
+                font-size: 16px;
+                text-decoration: none;
+                color: #833ae0;
+            }
+
+            .adminToolsDiv {
+                padding: 2px;
+                width: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                img {
+                    width: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .addToCartDiv {
+                box-sizing: content-box;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #833ae0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                cursor: pointer;
+                padding: 1px;
+
+                img {
+                    width: 100%;
+                }
+
+                &:hover {
+                    background-color: #823ae021;
+                }
+            }
+        }
+
+        p {
+            font-size: 12px;
+            padding-right: 20px;
+            margin-top: 0;
+        }
+    }
+}

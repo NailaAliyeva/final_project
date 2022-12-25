@@ -1,0 +1,189 @@
+.mainContainer {
+    padding: 0 50px;
+
+    .topComponent {
+        min-height: 240px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        
+        .leftSide {
+            width: 60%;
+
+            .headerNameDiv {
+                position: relative;
+                padding-bottom: 27px;
+                h1 {
+                    font-weight: 300;
+                    font-size: 50px;
+                    line-height: 59px;
+                    margin: 42px 0 0;
+                }
+
+                .breadCrumbDiv {
+                    position: absolute;
+                    bottom: 17px;
+                    a {
+                        margin: 0;
+                        padding: 0;
+
+                        font-weight: 500;
+                        font-size: 10px;
+                        text-decoration-line: underline;
+                        color: #b1abab;
+                    }
+                    span {
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 10px;
+                        text-decoration-line: none;
+                        color: #b1abab;
+                        cursor: auto;
+                    }
+                }
+            }
+
+            .searchSection {
+                width: 525px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 7px 0 10px;
+                label {
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                input {
+                    width: 375px;
+                    height: 48px;
+                    font-size: 18px;
+                    padding: 6px 10px 7px;
+                    padding: 0 10px;
+                    border-radius: 3px;
+                    border: 1px solid #777777;
+                }
+
+                button {
+                    width: 120px;
+                    height: 48px;
+                    color: white;
+                    border-style: none;
+                    border-radius: 3px;
+                    background-color: #833ae0;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            span {
+                font-weight: 300;
+                font-size: 14px;
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+
+            .filterContainer {
+                position: absolute;
+                padding: 10px 10px 0;
+                min-width: 390px;
+                min-height: 100px;
+                display: flex;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.377);
+                background-color: white;
+                z-index: 2;
+
+                .leftSideF {
+                    flex: 50%;
+                    margin-right: 7px;
+
+                    select {
+                        width: 375px;
+                        height: 48px;
+                        border-radius: 3px;
+                        margin: 5px 0 7px;
+                        font-size: 18px;
+                    }
+                }
+
+                .rightSideF {
+                    flex: 50%;
+                    padding-left: 7px;
+                    .fromToField {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        input {
+                            width: 155px;
+                            height: 48px;
+                            margin: 5px 9px 7px 5px;
+                            font-size: 18px;
+                            padding: 0 7px;
+                            border-radius: 3px;
+                            border: 1px solid #b1abab;
+                        }
+
+                        span {
+                            cursor: auto;
+                            font-size: 14px;
+                            font-weight: 100;
+                            opacity: 0.6;
+                            text-decoration: none;
+
+                            option {
+                                padding: 5px 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .rightSide {
+            width: 40%;
+            // background-color: yellowgreen;
+            display: flex;
+            // border: 1px solid;
+            flex-direction: column;
+
+            .rightSideInfoDiv {
+                flex: 1;
+                // background-color: #b1abab;
+            }
+
+            .addCoinDiv {
+                display: flex;
+                justify-content: flex-end;
+                padding: 0 10px;
+
+                a {
+                    box-sizing: content-box;
+                    display: inline-block;
+                    width: 140px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 25px;
+                    padding: 1px 10px 1px 1px;
+                    // text-decoration: none;
+                    img {
+                        width: 35px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: black;
+                    }
+
+                    &:hover {
+                        background-color: rgba(183, 137, 243, 0.199);
+                    }
+                }
+            }
+        }
+    }
+}

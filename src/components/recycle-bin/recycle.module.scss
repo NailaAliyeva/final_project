@@ -1,0 +1,167 @@
+.recycleBinContainer {
+    h1 {
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 59px;
+        margin: 52px 0 0;   
+    }
+
+    .sectionsContainer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 80px;
+
+        .recycleBinSection {
+            padding: 10px;
+            width: 270px;
+            min-height: 300px;
+            box-shadow: 0 0 5px black;
+            border-radius: 4px;
+            h2 {
+                margin: 0 0 15px;
+            }
+
+            .crcleDiv {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                border: 1px solid #777;
+                margin: 0 auto 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    margin: 0;
+                    font-size: 60px;
+                    opacity: 0.8;
+                }
+
+                hr {
+                    width: 80%;
+                }
+
+                img {
+                    margin-top: 10px;
+                    width: 30px;
+                }
+            }
+
+            .buttonsDiv {
+                padding: 0 10px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                button {
+                    padding: 10px;
+                    border-radius: 2px;
+                    border-style: none;
+                    cursor: pointer;
+                    margin: 5px 0;
+                    color: white;
+                    font-weight: 600;
+                    opacity: 0.75;
+
+                    &:hover {
+                        opacity: 1;
+                        box-shadow: 0 0 5px violet;
+                    }
+                }
+
+                .listButton {
+                    background-color: green;
+                }
+
+                .restoreButton {
+                    background-color: #9c61e6;
+                }
+
+                .deleteButton {
+                    background-color: red;
+                }
+            }
+        }
+
+        .listPopupContainer {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.295);
+            padding-top: 50px;
+            z-index: 1;
+
+            .listContainer {
+                width: 560px;
+                height: 600px;
+                border-radius: 4px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 10px;
+                overflow: scroll;
+                overflow-x: hidden;
+
+                .coinContainer {
+                    box-sizing: content-box;
+                    width: 500px;
+                    height: 120px;
+                    margin: 0 auto;
+                    border: 1px solid rgba(119, 119, 119, 0.37);
+                    margin: 12.5px 5px;
+                    border-radius: 5px;
+                    display: flex;
+                    padding: 5px;
+                    background-color: rgba(255, 255, 255, 0.212);
+
+                    .imageDiv {
+                        width: 120px;
+                        height: 120px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .infoDiv {
+                        flex-grow: 1;
+                        padding-left: 25px;
+
+                        .linkAndAddToCartDiv {
+                            display: flex;
+                            justify-content: space-between;
+                            a {
+                                font-weight: bold;
+                                font-size: 16px;
+                                text-decoration: none;
+                                color: #833ae0;
+                            }
+
+                            .adminToolsDiv {
+                                padding: 2px;
+                                width: 55px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                img {
+                                    width: 20px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 12px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  
+  /* background-color: rgba(0, 0, 0, 0.945);
+  color: white; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1180px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0);
+  min-height: 100vh;  
+}
+/*Header style---------------------------------------------------*/
+
+a {
+  color: black;
+}
+
+/*---------------------------------------------------------------*/
+

@@ -1,0 +1,76 @@
+.historyContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+    padding-top: 50px;
+    z-index: 5;
+
+    .historyMainBody {
+        width: 560px;
+        height: 600px;
+        border-radius: 4px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 10px;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        .dateContainer {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+            margin-bottom: 5px;
+
+            span {
+                font-size: 14px;
+                opacity: 0.7;
+            }
+        }
+
+        .coinContainer {
+            box-sizing: content-box;
+            width: 500px;
+            height: 120px;
+            border: 1px solid rgba(119, 119, 119, 0.37);
+            margin: 12.5px 5px 5px;
+            border-radius: 5px;
+            display: flex;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.212);
+
+            .imageDiv {
+                width: 120px;
+                height: 120px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .infoDiv {
+                flex-grow: 1;
+                padding-left: 25px;
+
+                .linkAndAddToCartDiv {
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        font-weight: bold;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #833ae0;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

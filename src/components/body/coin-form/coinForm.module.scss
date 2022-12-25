@@ -1,0 +1,112 @@
+.coinFormContainer {
+    h1 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+    }
+
+    form {
+        display: flex;
+
+        .fomrSection {
+            width: 33.33%;
+            padding: 0 10px;
+            // border: 1px solid;
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            input {
+                width: 100%;
+                height: 45px;
+                font-size: 20px;
+                margin: 5px 0 20px;
+                padding: 0 10px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 131px;
+                font-size: 15px;
+                margin: 5px 0 20px;
+                resize: none;
+            }
+
+            select {
+                width: 100%;
+                height: 45px;
+                font-size: 20px;
+                margin: 5px 0 20px;
+            }
+
+            .coinsImagesContainer {
+                // border: 1px solid;
+                height: 315px;
+                display: flex;
+                flex-wrap: wrap;
+                // flex-direction: column;
+                align-content: space-between;
+                margin: 25px 0 25px;
+
+                .downloadImageDiv {
+                    // border: 1px solid;
+                    width: 100%;
+                    height: 131px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .coinImageDiv {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 100%;
+                        border: 1px solid #b6acac9a;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    input {
+                        width: 200px;
+                        height: 25px;
+                        font-size: 14px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .buttonsDiv {
+                margin: 25px auto 0;
+                display: flex;
+                justify-content: space-between;
+                width: 270px;
+                button {
+                    width: 120px;
+                    height: 48px;
+                    border-style: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                .submitButton {
+                    background: #833ae0;
+                    color: white;
+                }
+
+                .chancelButton {
+                    background: #e1e1e1;
+                }
+            }
+        }
+    }
+}
